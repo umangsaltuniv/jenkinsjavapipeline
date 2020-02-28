@@ -7,13 +7,13 @@ pipeline {
 		
         stage('Compile') {
             steps {
-                sh 'javac HelloJava.java'
+                sh 'javac'
             }
         }
 		
 		stage('Build') {
             steps {
-                sh 'java HelloJava'
+                sh 'java'
             }
         }
 		
